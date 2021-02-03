@@ -48,8 +48,6 @@ class AnimalFragment : Fragment(R.layout.fragment_animal)  {
             TODO("Not yet implemented")
         }
 
-
-
     }
 
 

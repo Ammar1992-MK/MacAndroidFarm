@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnChicken.setOnClickListener {
+            //Add the fragment when the activity is ready
             supportFragmentManager
                 .beginTransaction()
                 .replace(R.id.fragment_container, AnimalFragment.newInstance(item = R.drawable.goat))
