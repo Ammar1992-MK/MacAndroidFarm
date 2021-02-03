@@ -20,10 +20,12 @@ class MainActivity : AppCompatActivity() {
         binding.btnChicken.setOnClickListener {
             supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.fragment_container, AnimalFragment())
-                .addToBackStack("chicken")
+                .replace(R.id.fragment_container, AnimalFragment.newInstance(item = R.drawable.goat))
+                .addToBackStack("goat")
                 .commit()
         }
+
+
 
 
 
